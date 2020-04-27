@@ -438,7 +438,7 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n");
 
 /***/ }),
 
@@ -826,6 +826,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_storage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ionic/storage */ "./node_modules/@ionic/storage/fesm5/ionic-storage.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @ionic-native/file-opener/ngx */ "./node_modules/@ionic-native/file-opener/ngx/index.js");
+
 
 
 
@@ -856,6 +858,7 @@ var AppModule = /** @class */ (function () {
                 _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__["SplashScreen"],
                 ng2_file_upload__WEBPACK_IMPORTED_MODULE_4__["FileUploadModule"],
                 _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_8__["File"],
+                _ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_12__["FileOpener"],
                 { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicRouteStrategy"] }
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"]]
@@ -933,7 +936,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\ASK Computers\Downloads\file-Demo-master (2)\file-Demo-master\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\WorkArea\Tutorials\ionic\fileSaveIonic\src\main.ts */"./src/main.ts");
 
 
 /***/ })

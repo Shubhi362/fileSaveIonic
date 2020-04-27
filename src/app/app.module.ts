@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 import { FileUploadModule } from 'ng2-file-upload';
-import { MultiFileUploadComponent } from '../app/components/multi-file-upload/multi-file-upload.component';
+
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -13,6 +13,7 @@ import { IonicStorageModule } from '@ionic/storage';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FileOpener } from '@ionic-native/file-opener/ngx';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { AppRoutingModule } from './app-routing.module';
     SplashScreen,
     FileUploadModule,
     File,
+    FileOpener,
     
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

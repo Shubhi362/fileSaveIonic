@@ -2906,20 +2906,7 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"form-group\">\n  \n      <label>Upload Logo</label>\n      {{imageError}}\n      <div class=\"custom-file fileInputProfileWrap\">\n          <input type=\"file\" (change)=\"fileChangeEvent($event)\" class=\"fileInputProfile\">\n          <div class=\"img-space\">\n\n              <ng-container *ngIf=\"isImageSaved; else elseTemplate\">\n                  <img  height=\"500\" width=\"500\" [src]=\"cardImageBase64\" />\n              </ng-container>\n              <ng-template #elseTemplate>\n\n                  <img src=\"./../../assets/placeholder.png\" class=\"img-responsive\">\n              </ng-template>\n\n          </div>\n\n      </div>\n      <a class=\"btn btn-danger\" (click)=\"removeImage()\" *ngIf=\"isImageSaved\">Remove</a>\n      <ion-button class=\"btn btn-primary\" (click)=\"getAllFIles()\" >Get All files </ion-button>\n      <ion-button class=\"btn btn-danger\" (click)=\"clearList()\" >clear</ion-button>\n\n      <ion-row  *ngIf=\"clicked\">\n          <ion-col size=\"8\" offset=\"2\">\n             <ion-list  style=\"max-height:500px;overflow-y: scroll;border:1px solid black\">\n                    <ion-row   *ngFor=\"let obj of allFiles\">\n                \n                    <ion-col size=\"6\" style=\"float:left;display:flex;align-content:flex-start\">\n                <a (click)=\"showFile(obj)\">{{obj?.name}}</a>  \n            </ion-col>\n                <ion-col size=\"6\"*ngIf=\"singleImageBase64[obj.name]\">\n                        <img  height=\"100\" width=\"100\" align=\"right\" [src]=\"_DomSanitizationService.bypassSecurityTrustUrl(singleImageBase64[obj.name])\"/>\n                </ion-col>\n           \n               \n            </ion-row>\n      </ion-list>\n    </ion-col>\n    </ion-row>\n</div>");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/multi-file-upload/multi-file-upload.component.html":
-/*!*********************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/multi-file-upload/multi-file-upload.component.html ***!
-  \*********************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div ng2FileDrop [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\" (fileOver)=\"fileOverBase($event)\" [uploader]=\"uploader\" class=\"drop-zone\">\n  Drop files here...\n</div>\n\n<div class=\"file-input-container\">\n  <label>\n    <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" multiple />\n    Add Files\n  </label>\n</div>\n\n<h2>Files: {{ uploader?.queue?.length }}</h2>\n\n<ion-list>\n  <ion-reorder-group (ionItemReorder)=\"reorderFiles($event)\" disabled=\"false\">\n    <ion-item *ngFor=\"let item of uploader.queue\">\n      <ion-label>\n        {{ item?.file?.name }}\n      </ion-label>\n      <ion-reorder></ion-reorder>\n    </ion-item>\n  </ion-reorder-group>\n</ion-list>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"form-group\">\r\n  \r\n      <label>Upload Logo</label>\r\n      {{imageError}}\r\n      <div class=\"custom-file fileInputProfileWrap\">\r\n          <input type=\"file\" (change)=\"fileChangeEvent($event)\" class=\"fileInputProfile\">\r\n          <div class=\"img-space\">\r\n\r\n              <ng-container *ngIf=\"isImageSaved; else elseTemplate\">\r\n                 {{imageSucess}}\r\n              </ng-container>\r\n              <ng-template #elseTemplate>\r\n\r\n                  <img src=\"./../../assets/placeholder.png\" class=\"img-responsive\">\r\n              </ng-template>\r\n\r\n          </div>\r\n\r\n      </div>\r\n      <a class=\"btn btn-danger\" (click)=\"removeImage()\" *ngIf=\"isImageSaved\">Remove</a>\r\n      <ion-button class=\"btn btn-primary\" (click)=\"getAllFIles()\" >Get All files </ion-button>\r\n      <ion-button class=\"btn btn-danger\" (click)=\"clearList()\" >clear</ion-button>\r\n\r\n      <ion-row  *ngIf=\"clicked\">\r\n          <ion-col size=\"8\" offset=\"2\">\r\n             <ion-list  style=\"max-height:500px;overflow-y: scroll;border:1px solid black\">\r\n                    <ion-row   *ngFor=\"let obj of allFiles\">\r\n                \r\n                    <ion-col size=\"6\" style=\"float:left;display:flex;align-content:flex-start\">\r\n                <a (click)=\"showFile(obj)\">{{obj?.name}}</a>  \r\n            </ion-col>\r\n                <ion-col size=\"6\"*ngIf=\"singleImageBase64[obj.name]\">\r\n                        <img  height=\"100\" width=\"100\" align=\"right\" [src]=\"_DomSanitizationService.bypassSecurityTrustUrl(singleImageBase64[obj.name])\"/>\r\n                </ion-col>\r\n           \r\n               \r\n            </ion-row>\r\n      </ion-list>\r\n    </ion-col>\r\n    </ion-row>\r\n</div>");
 
 /***/ }),
 
@@ -2932,7 +2919,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Blank\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Blank</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <div id=\"container\">\n    <app-photo-base64></app-photo-base64>\n   \n  </div>\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header [translucent]=\"true\">\r\n  <ion-toolbar>\r\n    <ion-title>\r\n      Blank\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content [fullscreen]=\"true\">\r\n  <ion-header collapse=\"condense\">\r\n    <ion-toolbar>\r\n      <ion-title size=\"large\">Blank</ion-title>\r\n    </ion-toolbar>\r\n  </ion-header>\r\n\r\n  <div id=\"container\">\r\n    <app-photo-base64></app-photo-base64>\r\n   \r\n  </div>\r\n</ion-content>\r\n");
 
 /***/ }),
 
@@ -2965,6 +2952,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _capacitor_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @capacitor/core */ "./node_modules/@capacitor/core/dist/esm/index.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/file/ngx */ "./node_modules/@ionic-native/file/ngx/index.js");
+/* harmony import */ var _ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/file-opener/ngx */ "./node_modules/@ionic-native/file-opener/ngx/index.js");
 
 
 
@@ -2972,11 +2960,13 @@ __webpack_require__.r(__webpack_exports__);
 
 var Filesystem = _capacitor_core__WEBPACK_IMPORTED_MODULE_3__["Plugins"].Filesystem;
 
+
 var PhotoBase64Component = /** @class */ (function () {
-    function PhotoBase64Component(_DomSanitizationService, storage, file) {
+    function PhotoBase64Component(_DomSanitizationService, storage, file, fileOpener) {
         this._DomSanitizationService = _DomSanitizationService;
         this.storage = storage;
         this.file = file;
+        this.fileOpener = fileOpener;
         this.singleImageBase64 = [];
         this.clicked = false;
         this.allFiles = [{ name: "", path: "", type: "" }];
@@ -2984,7 +2974,7 @@ var PhotoBase64Component = /** @class */ (function () {
     PhotoBase64Component.prototype.ngOnInit = function () { };
     PhotoBase64Component.prototype.fileChangeEvent = function (fileInput) {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
-            var fileName_1, reader, blobUrl;
+            var fileName_1, filePath, reader;
             var _this = this;
             return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
                 this.imageError = null;
@@ -2992,50 +2982,46 @@ var PhotoBase64Component = /** @class */ (function () {
                 if (fileInput.target.files && fileInput.target.files[0]) {
                     fileName_1 = fileInput.target.files[0].name;
                     this.fileType = fileInput.target.files[0].type;
+                    filePath = void 0;
                     reader = new FileReader();
                     reader.onload = function (e) {
+                        debugger;
                         var imgBase64Path = e.target.result;
                         _this.cardImageBase64 = imgBase64Path;
                         console.log(_this.cardImageBase64);
-                        _this.isImageSaved = true;
                         try {
                             var result = Filesystem.writeFile({
-                                path: 'secrets/' + fileName_1,
+                                path: fileName_1,
                                 data: e.target.result,
                                 directory: _capacitor_core__WEBPACK_IMPORTED_MODULE_3__["FilesystemDirectory"].Documents,
-                                recursive: true
-                            }).then(function (writeFileResult) {
-                                Filesystem.getUri({
-                                    directory: _capacitor_core__WEBPACK_IMPORTED_MODULE_3__["FilesystemDirectory"].Documents,
-                                    path: 'secrets/' + fileName_1
-                                }).then(function (result) {
-                                    debugger;
-                                    var urlpath = result.uri;
-                                    var path = _capacitor_core__WEBPACK_IMPORTED_MODULE_3__["Capacitor"].convertFileSrc(result.uri);
-                                }, function (err) {
-                                    console.log(err);
-                                });
+                                recursive: false
+                            }).then(function (path) {
+                                debugger;
+                                _this.fileName = fileName_1;
+                                _this.filePath = path.uri;
+                                _this.storage.set(_this.fileName, { 'path': _this.filePath, 'type': _this.fileType });
+                                _this.isImageSaved = true;
+                                _this.imageSucess = "Files are saved Sucessfully.";
                             }, function (err) {
-                                console.log(err);
+                                _this.isImageSaved = false;
+                                _this.imageError = "unable to save file";
                             });
-                            console.log(fileName_1);
-                            _this.fileName = fileName_1;
-                            _this.filePath = 'secrets/' + fileName_1;
-                            _this.storage.set(fileName_1, { 'path': 'secrets/' + fileName_1, 'type': _this.fileType });
-                            console.log('Wrote file', result);
                         }
                         catch (e) {
-                            console.error('Unable to write file', e);
+                            _this.isImageSaved = false;
+                            _this.imageError = e;
+                            _this.imageError = e;
                         }
                     };
-                    if (this.fileType.includes('pdf')) {
-                        blobUrl = URL.createObjectURL(fileInput.target.files[0]);
-                        window.open(blobUrl);
-                        reader.readAsDataURL(fileInput.target.files[0]);
-                    }
-                    else {
-                        reader.readAsDataURL(fileInput.target.files[0]);
-                    }
+                    reader.readAsDataURL(fileInput.target.files[0]);
+                    // if(this.fileType.includes('pdf')){
+                    //   var blobUrl=URL.createObjectURL(fileInput.target.files[0]);
+                    //   window.open(blobUrl)
+                    // reader.readAsDataURL(fileInput.target.files[0]);
+                    // }
+                    // else{
+                    //   reader.readAsDataURL(fileInput.target.files[0]);
+                    // }
                 }
                 return [2 /*return*/];
             });
@@ -3049,12 +3035,12 @@ var PhotoBase64Component = /** @class */ (function () {
     PhotoBase64Component.prototype.getAllFIles = function () {
         var _this = this;
         this.allFiles = [{ name: "", path: "", type: "" }];
-        debugger;
         this.clicked = true;
-        this.storage.forEach(function (path, name) {
+        this.storage.forEach(function (val, key) {
             var obj = { name: "", path: "", type: "" };
-            obj.name = name;
-            obj.path = path;
+            obj.name = key;
+            obj.path = val.path;
+            obj.type = val.type;
             _this.allFiles.push(obj);
         });
     };
@@ -3062,36 +3048,35 @@ var PhotoBase64Component = /** @class */ (function () {
         this.allFiles = [{ name: "", path: "", type: "" }];
         this.clicked = false;
     };
+    PhotoBase64Component.prototype.getMIMEtype = function (extn) {
+        var ext = extn.toLowerCase();
+        var MIMETypes = {
+            'txt': 'text/plain',
+            'docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            'doc': 'application/msword',
+            'pdf': 'application/pdf',
+            'jpg': 'image/jpeg',
+            'bmp': 'image/bmp',
+            'png': 'image/png',
+            'xls': 'application/vnd.ms-excel',
+            'xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            'rtf': 'application/rtf',
+            'ppt': 'application/vnd.ms-powerpoint',
+            'pptx': 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+        };
+        return MIMETypes[ext];
+    };
     PhotoBase64Component.prototype.showFile = function (obj) {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
-            var type, contents;
-            var _this = this;
+            var file_name, fileExtn, fileMIMEType;
             return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        console.log(obj.path.type);
-                        debugger;
-                        type = obj.path.type;
-                        console.log(_capacitor_core__WEBPACK_IMPORTED_MODULE_3__["FilesystemDirectory"].Data);
-                        return [4 /*yield*/, Filesystem.readFile({
-                                path: 'secrets/' + obj.name,
-                                directory: _capacitor_core__WEBPACK_IMPORTED_MODULE_3__["FilesystemDirectory"].Documents,
-                            }).then(function (res) {
-                                if (type.includes('image')) {
-                                    _this.singleImageBase64[obj.name] = 'data:image/jpeg;base64,' + res.data;
-                                }
-                                else if (type.includes('pdf')) {
-                                    _this.b64toBlob(res.data, 'application/pdf', 512);
-                                }
-                                else {
-                                    _this.b64toBlob(res.data, type, 512);
-                                }
-                                // 'data:image/jpeg;base64,'+res.data; 
-                            })];
-                    case 1:
-                        contents = _a.sent();
-                        return [2 /*return*/];
-                }
+                file_name = obj.name;
+                fileExtn = file_name.split('.').reverse()[0];
+                fileMIMEType = this.getMIMEtype(fileExtn);
+                this.fileOpener.open(obj.path, fileMIMEType)
+                    .then(function () { return console.log('File is opened'); })
+                    .catch(function (e) { return console.log('Error openening file', e); });
+                return [2 /*return*/];
             });
         });
     };
@@ -3123,7 +3108,8 @@ var PhotoBase64Component = /** @class */ (function () {
     PhotoBase64Component.ctorParameters = function () { return [
         { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["DomSanitizer"] },
         { type: _ionic_storage__WEBPACK_IMPORTED_MODULE_2__["Storage"] },
-        { type: _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__["File"] }
+        { type: _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__["File"] },
+        { type: _ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_6__["FileOpener"] }
     ]; };
     PhotoBase64Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -3131,82 +3117,9 @@ var PhotoBase64Component = /** @class */ (function () {
             template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./photo-base64.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/component/photo-base64/photo-base64.component.html")).default,
             styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./photo-base64.component.scss */ "./src/app/component/photo-base64/photo-base64.component.scss")).default]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["DomSanitizer"],
-            _ionic_storage__WEBPACK_IMPORTED_MODULE_2__["Storage"], _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__["File"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["DomSanitizer"], _ionic_storage__WEBPACK_IMPORTED_MODULE_2__["Storage"], _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__["File"], _ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_6__["FileOpener"]])
     ], PhotoBase64Component);
     return PhotoBase64Component;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/multi-file-upload/multi-file-upload.component.scss":
-/*!*******************************************************************************!*\
-  !*** ./src/app/components/multi-file-upload/multi-file-upload.component.scss ***!
-  \*******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".drop-zone {\n  background-color: #f6f6f6;\n  border: dotted 3px #dedddd;\n  height: 30vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 20px 0;\n}\n\n.file-input-container {\n  text-align: right;\n}\n\n.file-input-container input[type=file] {\n  display: none;\n}\n\n.file-input-container label {\n  border: 1px solid #ccc;\n  padding: 6px 12px;\n  cursor: pointer;\n}\n\n.nv-file-over {\n  border: dotted 3px red;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tdWx0aS1maWxlLXVwbG9hZC9DOlxcVXNlcnNcXEFTSyBDb21wdXRlcnNcXERvd25sb2Fkc1xcZmlsZS1EZW1vLW1hc3RlciAoMilcXGZpbGUtRGVtby1tYXN0ZXIvc3JjXFxhcHBcXGNvbXBvbmVudHNcXG11bHRpLWZpbGUtdXBsb2FkXFxtdWx0aS1maWxlLXVwbG9hZC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy9tdWx0aS1maWxlLXVwbG9hZC9tdWx0aS1maWxlLXVwbG9hZC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJLHlCQUFBO0VBQ0EsMEJBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsdUJBQUE7RUFDQSxjQUFBO0FDQUo7O0FER0E7RUFFSSxpQkFBQTtBQ0RKOztBREdJO0VBQ0ksYUFBQTtBQ0RSOztBRElJO0VBQ0ksc0JBQUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7QUNGUjs7QURNQTtFQUNJLHNCQUFBO0FDSEoiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL211bHRpLWZpbGUtdXBsb2FkL211bHRpLWZpbGUtdXBsb2FkLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG4uZHJvcC16b25lIHsgXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2Y2ZjZmNjtcbiAgICBib3JkZXI6IGRvdHRlZCAzcHggI2RlZGRkZDsgXG4gICAgaGVpZ2h0OiAzMHZoO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDIwcHggMDtcbn1cblxuLmZpbGUtaW5wdXQtY29udGFpbmVyIHtcblxuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xuXG4gICAgaW5wdXRbdHlwZT1cImZpbGVcIl0ge1xuICAgICAgICBkaXNwbGF5OiBub25lO1xuICAgIH1cblxuICAgIGxhYmVsIHtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcbiAgICAgICAgcGFkZGluZzogNnB4IDEycHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB9XG59XG5cbi5udi1maWxlLW92ZXIgeyBcbiAgICBib3JkZXI6IGRvdHRlZCAzcHggcmVkOyBcblxuXG59IiwiLmRyb3Atem9uZSB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmNmY2ZjY7XG4gIGJvcmRlcjogZG90dGVkIDNweCAjZGVkZGRkO1xuICBoZWlnaHQ6IDMwdmg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBtYXJnaW46IDIwcHggMDtcbn1cblxuLmZpbGUtaW5wdXQtY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XG59XG4uZmlsZS1pbnB1dC1jb250YWluZXIgaW5wdXRbdHlwZT1maWxlXSB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG4uZmlsZS1pbnB1dC1jb250YWluZXIgbGFiZWwge1xuICBib3JkZXI6IDFweCBzb2xpZCAjY2NjO1xuICBwYWRkaW5nOiA2cHggMTJweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4ubnYtZmlsZS1vdmVyIHtcbiAgYm9yZGVyOiBkb3R0ZWQgM3B4IHJlZDtcbn0iXX0= */");
-
-/***/ }),
-
-/***/ "./src/app/components/multi-file-upload/multi-file-upload.component.ts":
-/*!*****************************************************************************!*\
-  !*** ./src/app/components/multi-file-upload/multi-file-upload.component.ts ***!
-  \*****************************************************************************/
-/*! exports provided: MultiFileUploadComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MultiFileUploadComponent", function() { return MultiFileUploadComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var ng2_file_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng2-file-upload */ "./node_modules/ng2-file-upload/fesm5/ng2-file-upload.js");
-
-
-
-var uploadAPI = 'http://localhost:8100/api/upload';
-var MultiFileUploadComponent = /** @class */ (function () {
-    function MultiFileUploadComponent() {
-        this.uploader = new ng2_file_upload__WEBPACK_IMPORTED_MODULE_2__["FileUploader"]({ url: uploadAPI, itemAlias: 'file' });
-        this.hasBaseDropZoneOver = false;
-    }
-    MultiFileUploadComponent.prototype.ngOnInit = function () {
-        this.uploader.onAfterAddingFile = function (file) { file.withCredentials = false; };
-        this.uploader.onCompleteItem = function (item, response, status, headers) {
-            console.log('FileUpload:uploaded successfully:', item, status, response);
-            alert('Your file has been uploaded successfully');
-        };
-    };
-    MultiFileUploadComponent.prototype.getFiles = function () {
-        debugger;
-        return this.uploader.queue.map(function (fileItem) {
-            return fileItem.file;
-        });
-    };
-    MultiFileUploadComponent.prototype.fileOverBase = function (ev) {
-        console.log('I am here ');
-        this.hasBaseDropZoneOver = ev;
-    };
-    MultiFileUploadComponent.prototype.reorderFiles = function (reorderEvent) {
-        console.log('I am here2 ');
-        var element = this.uploader.queue.splice(reorderEvent.detail.from, 1)[0];
-        this.uploader.queue.splice(reorderEvent.detail.to, 0, element);
-    };
-    MultiFileUploadComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-multi-file-upload',
-            template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./multi-file-upload.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/multi-file-upload/multi-file-upload.component.html")).default,
-            styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./multi-file-upload.component.scss */ "./src/app/components/multi-file-upload/multi-file-upload.component.scss")).default]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], MultiFileUploadComponent);
-    return MultiFileUploadComponent;
 }());
 
 
@@ -3269,11 +3182,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/fesm5/ionic-angular.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _home_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home.page */ "./src/app/home/home.page.ts");
-/* harmony import */ var _components_multi_file_upload_multi_file_upload_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/multi-file-upload/multi-file-upload.component */ "./src/app/components/multi-file-upload/multi-file-upload.component.ts");
-/* harmony import */ var ng2_file_upload__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng2-file-upload */ "./node_modules/ng2-file-upload/fesm5/ng2-file-upload.js");
-/* harmony import */ var _component_photo_base64_photo_base64_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../component/photo-base64/photo-base64.component */ "./src/app/component/photo-base64/photo-base64.component.ts");
-/* harmony import */ var _home_routing_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home-routing.module */ "./src/app/home/home-routing.module.ts");
-
+/* harmony import */ var ng2_file_upload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng2-file-upload */ "./node_modules/ng2-file-upload/fesm5/ng2-file-upload.js");
+/* harmony import */ var _component_photo_base64_photo_base64_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../component/photo-base64/photo-base64.component */ "./src/app/component/photo-base64/photo-base64.component.ts");
+/* harmony import */ var _home_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home-routing.module */ "./src/app/home/home-routing.module.ts");
 
 
 
@@ -3292,10 +3203,10 @@ var HomePageModule = /** @class */ (function () {
                 _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
                 _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["IonicModule"],
-                _home_routing_module__WEBPACK_IMPORTED_MODULE_9__["HomePageRoutingModule"],
-                ng2_file_upload__WEBPACK_IMPORTED_MODULE_7__["FileUploadModule"]
+                _home_routing_module__WEBPACK_IMPORTED_MODULE_8__["HomePageRoutingModule"],
+                ng2_file_upload__WEBPACK_IMPORTED_MODULE_6__["FileUploadModule"]
             ],
-            declarations: [_home_page__WEBPACK_IMPORTED_MODULE_5__["HomePage"], _components_multi_file_upload_multi_file_upload_component__WEBPACK_IMPORTED_MODULE_6__["MultiFileUploadComponent"], _component_photo_base64_photo_base64_component__WEBPACK_IMPORTED_MODULE_8__["PhotoBase64Component"]]
+            declarations: [_home_page__WEBPACK_IMPORTED_MODULE_5__["HomePage"], _component_photo_base64_photo_base64_component__WEBPACK_IMPORTED_MODULE_7__["PhotoBase64Component"]]
         })
     ], HomePageModule);
     return HomePageModule;
@@ -3314,7 +3225,7 @@ var HomePageModule = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("#container {\n  text-align: center;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n#container strong {\n  font-size: 20px;\n  line-height: 26px;\n}\n\n#container p {\n  font-size: 16px;\n  line-height: 22px;\n  color: #8c8c8c;\n  margin: 0;\n}\n\n#container a {\n  text-decoration: none;\n}\n\nion-content ion-toolbar {\n  --background: translucent;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXEFTSyBDb21wdXRlcnNcXERvd25sb2Fkc1xcZmlsZS1EZW1vLW1hc3RlciAoMilcXGZpbGUtRGVtby1tYXN0ZXIvc3JjXFxhcHBcXGhvbWVcXGhvbWUucGFnZS5zY3NzIiwic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQUE7RUFFQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxRQUFBO0VBQ0EsUUFBQTtFQUNBLDJCQUFBO0FDQUY7O0FER0E7RUFDRSxlQUFBO0VBQ0EsaUJBQUE7QUNBRjs7QURHQTtFQUNFLGVBQUE7RUFDQSxpQkFBQTtFQUVBLGNBQUE7RUFFQSxTQUFBO0FDRkY7O0FES0E7RUFDRSxxQkFBQTtBQ0ZGOztBREtBO0VBQ0UseUJBQUE7QUNGRiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgcmlnaHQ6IDA7XG4gIHRvcDogNTAlO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG59XG5cbiNjb250YWluZXIgc3Ryb25nIHtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBsaW5lLWhlaWdodDogMjZweDtcbn1cblxuI2NvbnRhaW5lciBwIHtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBsaW5lLWhlaWdodDogMjJweDtcblxuICBjb2xvcjogIzhjOGM4YztcblxuICBtYXJnaW46IDA7XG59XG5cbiNjb250YWluZXIgYSB7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuaW9uLWNvbnRlbnQgaW9uLXRvb2xiYXIge1xuICAtLWJhY2tncm91bmQ6IHRyYW5zbHVjZW50O1xufSIsIiNjb250YWluZXIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgcmlnaHQ6IDA7XG4gIHRvcDogNTAlO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG59XG5cbiNjb250YWluZXIgc3Ryb25nIHtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBsaW5lLWhlaWdodDogMjZweDtcbn1cblxuI2NvbnRhaW5lciBwIHtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBsaW5lLWhlaWdodDogMjJweDtcbiAgY29sb3I6ICM4YzhjOGM7XG4gIG1hcmdpbjogMDtcbn1cblxuI2NvbnRhaW5lciBhIHtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuXG5pb24tY29udGVudCBpb24tdG9vbGJhciB7XG4gIC0tYmFja2dyb3VuZDogdHJhbnNsdWNlbnQ7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("#container {\n  text-align: center;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n#container strong {\n  font-size: 20px;\n  line-height: 26px;\n}\n\n#container p {\n  font-size: 16px;\n  line-height: 22px;\n  color: #8c8c8c;\n  margin: 0;\n}\n\n#container a {\n  text-decoration: none;\n}\n\nion-content ion-toolbar {\n  --background: translucent;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9EOlxcV29ya0FyZWFcXFR1dG9yaWFsc1xcaW9uaWNcXGZpbGVTYXZlSW9uaWMvc3JjXFxhcHBcXGhvbWVcXGhvbWUucGFnZS5zY3NzIiwic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQUE7RUFFQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxRQUFBO0VBQ0EsUUFBQTtFQUNBLDJCQUFBO0FDQUY7O0FER0E7RUFDRSxlQUFBO0VBQ0EsaUJBQUE7QUNBRjs7QURHQTtFQUNFLGVBQUE7RUFDQSxpQkFBQTtFQUVBLGNBQUE7RUFFQSxTQUFBO0FDRkY7O0FES0E7RUFDRSxxQkFBQTtBQ0ZGOztBREtBO0VBQ0UseUJBQUE7QUNGRiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjY29udGFpbmVyIHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcblxyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBsZWZ0OiAwO1xyXG4gIHJpZ2h0OiAwO1xyXG4gIHRvcDogNTAlO1xyXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcclxufVxyXG5cclxuI2NvbnRhaW5lciBzdHJvbmcge1xyXG4gIGZvbnQtc2l6ZTogMjBweDtcclxuICBsaW5lLWhlaWdodDogMjZweDtcclxufVxyXG5cclxuI2NvbnRhaW5lciBwIHtcclxuICBmb250LXNpemU6IDE2cHg7XHJcbiAgbGluZS1oZWlnaHQ6IDIycHg7XHJcblxyXG4gIGNvbG9yOiAjOGM4YzhjO1xyXG5cclxuICBtYXJnaW46IDA7XHJcbn1cclxuXHJcbiNjb250YWluZXIgYSB7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG59XHJcblxyXG5pb24tY29udGVudCBpb24tdG9vbGJhciB7XHJcbiAgLS1iYWNrZ3JvdW5kOiB0cmFuc2x1Y2VudDtcclxufSIsIiNjb250YWluZXIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgcmlnaHQ6IDA7XG4gIHRvcDogNTAlO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG59XG5cbiNjb250YWluZXIgc3Ryb25nIHtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBsaW5lLWhlaWdodDogMjZweDtcbn1cblxuI2NvbnRhaW5lciBwIHtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBsaW5lLWhlaWdodDogMjJweDtcbiAgY29sb3I6ICM4YzhjOGM7XG4gIG1hcmdpbjogMDtcbn1cblxuI2NvbnRhaW5lciBhIHtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuXG5pb24tY29udGVudCBpb24tdG9vbGJhciB7XG4gIC0tYmFja2dyb3VuZDogdHJhbnNsdWNlbnQ7XG59Il19 */");
 
 /***/ }),
 

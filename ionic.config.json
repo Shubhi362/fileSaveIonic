@@ -1,7 +1,8 @@
 {
   "name": "file-Demo",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
