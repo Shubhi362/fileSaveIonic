@@ -130,41 +130,41 @@ getMIMEtype(extn){
 }
 
 async showFile(obj){
-  let file_name=obj.name;
-  let filepath =obj.path.replace(obj.name, '');
+  // let file_name=obj.name;
+  // let filepath =obj.path.replace(obj.name, '');
 
-  let fileExtn=file_name.split('.').reverse()[0];
-  let fileMIMEType=this.getMIMEtype(fileExtn);
+  // let fileExtn=file_name.split('.').reverse()[0];
+  // let fileMIMEType=this.getMIMEtype(fileExtn);
 
-  this.file.copyFile(filepath,file_name,this.file.dataDirectory, file_name).then(result=>
-    {
-      this.fileOpener.open(result.nativeURL,fileMIMEType);
-    });
+  // this.file.copyFile(filepath,file_name,this.file.dataDirectory, file_name).then(result=>
+  //   {
+  //     this.fileOpener.open(result.nativeURL,fileMIMEType);
+  //   });
           //  this.fileOpener.open(obj.path, fileMIMEType)
           //         .then(() => console.log('File is opened'))
           //         .catch(e => console.log('Error openening file', e));
                  
 
-      // let type=obj.type
-      // let path=obj.path;
-      // path=path.replace(FilesystemDirectory.Documents,'');
-      // debugger;
-      // let contents = await Filesystem.readFile({
-      //   path: path,
-      //   directory: FilesystemDirectory.Documents    
+      let type=obj.type
+      let path=obj.path;
+      path=path.replace(FilesystemDirectory.Documents,'');
+      debugger;
+      let contents = await Filesystem.readFile({
+        path: path,
+        directory: FilesystemDirectory.Documents    
       
-      // }).then(res=>{
-      //       if(type.includes('image')){
-      //           this.singleImageBase64[obj.name]='data:image/jpeg;base64,'+res.data;
-      //       }
-      //       else if(type.includes('pdf')){
-      //         this.b64toBlob(res.data,'application/pdf',512);
-      //       }
-      //       else{
-      //         this.b64toBlob(res.data,type,512);
-      //       }
-      // // 'data:image/jpeg;base64,'+res.data; 
-      // }); 
+      }).then(res=>{
+            if(type.includes('image')){
+                this.singleImageBase64[obj.name]='data:image/jpeg;base64,'+res.data;
+            }
+            else if(type.includes('pdf')){
+              this.b64toBlob(res.data,'application/pdf',512);
+            }
+            else{
+              this.b64toBlob(res.data,type,512);
+            }
+      // 'data:image/jpeg;base64,'+res.data; 
+      }); 
     }
 
     // async showpdf(obj){
